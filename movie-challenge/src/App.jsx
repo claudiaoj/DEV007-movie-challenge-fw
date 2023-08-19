@@ -1,17 +1,15 @@
-// import { useState } from 'react'
+
 import './App.css'
+import AppRouter from './router/AppRouter';
+// import Trending from './components/Trending';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <div>
-        
-      </div>
-      
-    </>
+    <div>
+      <AppRouter/>
+    </div>
   )
 }
 
-export default App
+export default App;
