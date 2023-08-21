@@ -11,12 +11,12 @@ body{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px 20px; /* Reducir el padding para dispositivos más pequeños */
+  padding: 40px 20px; 
   box-sizing: border-box;
 }
 
 .movie_title_tren {
-  width: 25%; /* Distribuir en filas de a 3 con espacio entre ellos */
+  width: 25%; 
   text-align: center;
   padding: 2rem 0;
   box-sizing: border-box;
@@ -24,13 +24,13 @@ body{
 
 @media screen and (max-width: 1350px) {
   .movie_title_tren {
-    width: 50%; /* Ajustar el ancho en dispositivos pequeños */
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .movie_title_tren {
-    width: 100%; /* Ocupar el ancho completo en dispositivos aún más pequeños */
+    width: 100%; 
   }
 }
 
