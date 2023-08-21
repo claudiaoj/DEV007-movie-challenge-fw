@@ -1,21 +1,50 @@
-.auto-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+
+body{
+  font-family: 'Strait', sans-serif;
+  color: #FFECEF;
 }
 
-body {
-  background: #efefef;
-  padding: 1rem;
-  line-height: 1.4;
-  font-family: sans-serif;
+.movies_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 20px; /* Reducir el padding para dispositivos más pequeños */
+  box-sizing: border-box;
 }
 
-img{
-  padding: 5rem 1rem;
+.movie_title_tren {
+  width: 25%; /* Distribuir en filas de a 3 con espacio entre ellos */
   text-align: center;
-  font-size: 1.2rem;
-  background: #251B37;
-  color: #ffffff;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1350px) {
+  .movie_title_tren {
+    width: 50%; /* Ajustar el ancho en dispositivos pequeños */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .movie_title_tren {
+    width: 100%; /* Ocupar el ancho completo en dispositivos aún más pequeños */
+  }
+}
+
+/*img_tren{
+;
+}*/
+
+.title_tren{
+  font-size: 1.3rem;
+}
+
+.trending{
+  text-align: left;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  margin-left: 10rem;
 }

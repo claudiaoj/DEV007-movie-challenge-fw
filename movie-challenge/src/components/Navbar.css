@@ -1,0 +1,47 @@
+/*body{
+    margin: 0;
+    background-color: #251B37 ;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+.navbar{
+    background-color: #251B37;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    height: 100px;
+    align-items: center;
+    font-family: 'Strait', sans-serif;
+    gap: 2rem;
+}
+
+.nav_logo img{
+    width: 7rem;
+}
+
+.nav_items a{
+    margin: 15px;
+    color: #ffff;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+.nav_line{
+    background-color: #ffff;
+    width: 100%;
+    position: absolute;
+    bottom: 1px; 
+    width: 100%;
+    height: .1px; 
+    border: none; 
+}
+
+.nav_bar{
+    color: white;
+}
