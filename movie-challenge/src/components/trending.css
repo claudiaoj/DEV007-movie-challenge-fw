@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
 
-
 body{
   font-family: 'Strait', sans-serif;
   color: #FFECEF;
@@ -9,42 +8,67 @@ body{
 .movies_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   padding: 40px 20px; 
   box-sizing: border-box;
 }
 
 .movie_title_tren {
-  width: 25%; 
+  flex: 0 0 23%; 
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0.5rem;
   box-sizing: border-box;
+  border-radius: 10px;
+  margin: 13px;
+  background-color: #372948;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.movie_card{
+  flex: 0 0 23%; 
+  box-sizing: border-box;
+  background-color: #372948;
+  margin: 6px ;
+
 }
 
 @media screen and (max-width: 1350px) {
   .movie_title_tren {
-    width: 50%;
+    flex: 0 0 31%;;
   }
+  
 }
 
 @media screen and (max-width: 700px) {
   .movie_title_tren {
+    flex: 0 0 48%;; 
+  }
+  .movie_card {
     width: 100%; 
   }
 }
 
-/*img_tren{
-;
-}*/
-
-.title_tren{
-  font-size: 1.3rem;
+.img_tren{
+  display: block;
+  margin: 0 auto; 
+  border-radius: 20px;
+  width: 15rem;
+  height: 20rem;
 }
 
-.trending{
+.title_tren{
+  font-size: 1.1rem;
+  margin: 15px;
+}
+
+.movies_heading{
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   padding-top: 2rem;
-  margin-left: 10rem;
+  margin-left: 7rem;
 }
