@@ -1,5 +1,6 @@
 import '../components/trending.css'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Trending() {
     const [movies, setMovies] = useState([]);
@@ -25,11 +26,13 @@ function Trending() {
             <h1 className='movies_heading'>Trending</h1>
             <div className='movies_container'>
             {
-            movies.map(movie => (
-                <div className='movie_title_tren movie_card' key={movie.id}>
-                    <img className='img_tren' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.name} />
-                    <p className='title_tren' >{movie.title || movie.name}</p>
-                </div>
+                movies.map(movie => (
+                <Link to={'/movies/' + movie.id} key={movie.id}>
+                    <div className='movie_title_tren movie_card' key={movie.id}>
+                        <img className='img_tren' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.name} />
+                        <p className='title_tren' >{movie.title || movie.name}</p>
+                    </div>
+                </Link>
             ))
             }
             </div>

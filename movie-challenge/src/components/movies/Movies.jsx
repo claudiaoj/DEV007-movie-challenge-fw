@@ -1,6 +1,7 @@
 import './movies.css';
 import '../trending.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Movies() {
     const [movies, setMovies] = useState([]);
@@ -27,7 +28,7 @@ function Movies() {
         fetchMovies();
     }, [apiKey, currentPage]);
 
-    useEffect(() => {
+        useEffect(() => {
         const updateVisiblePages = () => {
             const range = 5; 
             const halfRange = Math.floor(range / 2);
@@ -55,11 +56,13 @@ function Movies() {
             ) : (
                 <div className='movies_container'>
                     {movies.map(movie => (
-                        <div className='movie_card' key={movie.id}>
-                            <img className='movie_poster' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title || movie.name} />
-                            <p className='movie_title'>{movie.title || movie.name}</p>
-                            {/* Mostrar más información de la película aquí */}
-                        </div>
+                        <Link to={'/movies/' + movie.id} key={movie.id}>
+                            <div className='movie_card'>
+                                <img className='movie_poster' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title || movie.name} />
+                                <p className='movie_title'>{movie.title || movie.name}</p>
+                                {/* Mostrar más información de la película aquí */}
+                            </div>
+                        </Link>
                     ))}
                 </div>
             )}
