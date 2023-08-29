@@ -13,12 +13,6 @@ function Navbar() {
                 
             </div>
 
-            <div className="nav_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
             <hr className='nav_line' />
 
         </header>
@@ -28,6 +22,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-// <Link to="/InfoApp">InfoApp</Link> otro componente?

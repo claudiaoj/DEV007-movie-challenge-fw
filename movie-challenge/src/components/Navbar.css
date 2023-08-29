@@ -23,8 +23,8 @@
     font-size: 1.5rem;
 }
 
-.nav_toggle{
-    display: none;
+.nav_items a:hover{
+    color: antiquewhite;
 }
 
 .nav_line{

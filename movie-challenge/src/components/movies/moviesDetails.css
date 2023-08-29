@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+.back-button-container{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.back-button{
+    background-color:#FFECEF;
+    color: #251B37;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:0.8rem;
+    padding: 0.2rem;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    border-radius: 5px;
+    margin: 20px 40px 0 0;
+
+}
+
+.back-button:hover{
+    background-color: #372948;;
+    color:#FFECEF;
+}
+
+.back-button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background:#FFECEF;
+    transition:400ms ease all;
+}
+.back-button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.back-button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+.md-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.md-title{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.col{
+    max-width: 350px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.md-img{
+    border-radius: 15px;
+}
+
+.md-details{
+    font-family: 'Strait', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+

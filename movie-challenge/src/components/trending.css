@@ -5,6 +5,18 @@ body{
   color: #FFECEF;
 }
 
+.movies_heading_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.movies_heading-tren {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
 .movies_container {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +38,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  color: #FFECEF;
 }
 
 .movie_card{
@@ -66,9 +78,14 @@ body{
   margin: 15px;
 }
 
-.movies_heading{
+/*.movies_heading{
   text-align: left;
   font-size: 2.3rem;
   padding-top: 2rem;
   margin-left: 7rem;
+}*/
+
+.link-movies{
+  text-decoration: none;
+  text-align: center;
 }

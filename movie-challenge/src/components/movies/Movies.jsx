@@ -56,11 +56,10 @@ function Movies() {
             ) : (
                 <div className='movies_container'>
                     {movies.map(movie => (
-                        <Link to={'/movies/' + movie.id} key={movie.id}>
+                        <Link to={'/movies/' + movie.id} key={movie.id} className='link-movies'>
                             <div className='movie_card'>
                                 <img className='movie_poster' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title || movie.name} />
                                 <p className='movie_title'>{movie.title || movie.name}</p>
-                                {/* Mostrar más información de la película aquí */}
                             </div>
                         </Link>
                     ))}

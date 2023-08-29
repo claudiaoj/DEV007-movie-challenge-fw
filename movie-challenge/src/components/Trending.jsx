@@ -23,11 +23,14 @@ function Trending() {
     return (
 
         <div>
-            <h1 className='movies_heading'>Trending</h1>
+            <div className='movies_heading_container'>
+                <h2 className='movies_heading_tren'>Top 20</h2>
+                <h1 className='movies_heading'>Trending Now</h1>
+            </div>
             <div className='movies_container'>
             {
                 movies.map(movie => (
-                <Link to={'/movies/' + movie.id} key={movie.id}>
+                <Link to={'/movies/' + movie.id} key={movie.id} className='link-movies' >
                     <div className='movie_title_tren movie_card' key={movie.id}>
                         <img className='img_tren' src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.name} />
                         <p className='title_tren' >{movie.title || movie.name}</p>
