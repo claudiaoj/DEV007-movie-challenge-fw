@@ -9,7 +9,7 @@ function Navbar() {
             </div>
             <div className="nav_items">
                 <Link to="/">Home</Link>
-                <Link to="/Movies">Movies</Link>
+                <Link to="/Trending">Trending</Link>
             </div>
 
             <hr className='nav_line' />

@@ -50,7 +50,7 @@ function Movies() {
 
     return (
         <div>
-            <h1 className='movies_heading'>All Movies</h1>
+            <h1 className='movies_heading'>🎬 Movies</h1>
             {loading ? (
                 <p>Cargando...</p>
             ) : (

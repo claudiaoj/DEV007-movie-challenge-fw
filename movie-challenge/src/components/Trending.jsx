@@ -24,7 +24,7 @@ function Trending() {
 
         <div>
             <div className='movies_heading_container'>
-                <h2 className='movies_heading_tren'>Top 20</h2>
+                <h2 className='movies_heading_tren'>Top 20 ⭐</h2>
                 <h1 className='movies_heading'>Trending Now</h1>
             </div>
             <div className='movies_container'>

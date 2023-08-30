@@ -8,9 +8,9 @@ import MovieDetailsFail from "../components/movies/MovieDetailsFail";
 function AppRouter() {
     return (
         <Routes>
-            <Route path="/" element={<Layout><Trending /></Layout>} />
-            <Route path="/Trending" element={<Layout><Trending /></Layout> }/>
+            <Route path="/" element={<Layout><Movies/></Layout>} />
             <Route path="/Movies" element={<Layout><Movies /></Layout>} />
+            <Route path="/Trending" element={<Layout><Trending /></Layout> }/>
             <Route path="/movies/:movieId" element={<Layout><MoviesDetails /></Layout>} />
             <Route path="/movie-not-available" element={<Layout><MovieDetailsFail /></Layout>} />
         </Routes>
