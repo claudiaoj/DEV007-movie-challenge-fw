@@ -10,7 +10,6 @@ function MovieDetailsFail() {
         navigate(-1); 
     };
 
-
     return (
         <>
             <div className="back-button-container">

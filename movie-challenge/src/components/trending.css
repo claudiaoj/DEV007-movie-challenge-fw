@@ -76,14 +76,9 @@ body{
 .title_tren{
   font-size: 1.1rem;
   margin: 15px;
+  inline-size: 200px;
+  overflow-wrap: break-word;
 }
-
-/*.movies_heading{
-  text-align: left;
-  font-size: 2.3rem;
-  padding-top: 2rem;
-  margin-left: 7rem;
-}*/
 
 .link-movies{
   text-decoration: none;

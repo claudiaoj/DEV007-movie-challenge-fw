@@ -12,9 +12,7 @@ function AppRouter() {
             <Route path="/Trending" element={<Layout><Trending /></Layout> }/>
             <Route path="/Movies" element={<Layout><Movies /></Layout>} />
             <Route path="/movies/:movieId" element={<Layout><MoviesDetails /></Layout>} />
-            <Route path="/movie-not-available" element={<Layout><MovieDetailsFail /></Layout>} /> {/* Ruta para MovieDetailsFail */}
-
-            
+            <Route path="/movie-not-available" element={<Layout><MovieDetailsFail /></Layout>} />
         </Routes>
     )
 }

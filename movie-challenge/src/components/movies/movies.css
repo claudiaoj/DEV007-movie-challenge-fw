@@ -62,6 +62,8 @@ body {
   margin: 15px;
   color: #FFECEF;
   text-decoration: none;
+  inline-size: 200px;
+  overflow-wrap: break-word;
 }
 
 .movies_heading {

@@ -10,7 +10,6 @@ function Navbar() {
             <div className="nav_items">
                 <Link to="/">Home</Link>
                 <Link to="/Movies">Movies</Link>
-                
             </div>
 
             <hr className='nav_line' />
