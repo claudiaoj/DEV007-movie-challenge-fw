@@ -2,6 +2,8 @@ import './movies.css';
 import '../trending.css';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+// import Search from '../search/Search';
+
 
 function Movies() {
     const [movies, setMovies] = useState([]);
@@ -54,7 +56,7 @@ function Movies() {
             {loading ? (
                 <p>Cargando...</p>
             ) : (
-                <div className='movies_container'>
+                    <div className='movies_container'>
                     {movies.map(movie => (
                         <Link to={'/movies/' + movie.id} key={movie.id} className='link-movies'>
                             <div className='movie_card'>

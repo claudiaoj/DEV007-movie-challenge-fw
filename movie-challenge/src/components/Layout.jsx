@@ -1,13 +1,16 @@
 import Navbar from "../components/Navbar";
 import PropTypes from "prop-types";
+import Footer from "./footer/Footer";
+
 
 function Layout({ children }) {
     return (
     <div>
         <Navbar />
         <div className="content-container">
-        {children}
+            {children}
         </div>
+        <Footer /> 
     </div>
     );
 }

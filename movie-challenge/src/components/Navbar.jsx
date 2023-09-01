@@ -1,5 +1,8 @@
 import '../components/Navbar.css'
 import { Link } from 'react-router-dom';
+/* import Search from './search/Search';
+import '../components/search/search.css'*/
+
 
 function Navbar() {
     return (
