@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+.search_container {
+    display: flex;
+    align-items:center;
+    background-color: #372948;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.search_input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: #FFECEF;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Strait', sans-serif;
+    min-width: 0;
+}
+
+.search_input::placeholder {
+    color: #554466;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    border-radius: 60%;
+    color: #554466;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 9px 5px 8px;
+    margin-left: 10px;
+    min-width: 0;
+}
+
+.search_button:hover {
+    background-color: #554466;
+    color: #FFECEF;
+}

@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import MovieDetailsFail from './MovieDetailsFail';
-import './moviesDetails.css'
-
-
+import './moviesDetails.css';
 
 function MoviesDetails() {
     const [movieDetails, setMovieDetails] = useState({});
@@ -24,7 +22,7 @@ function MoviesDetails() {
 
         fetchMovieDetails();
     }, [apiKey, movieId]);
-    
+
     const navigate = useNavigate();
 
     const goBack = () => {
@@ -36,19 +34,40 @@ function MoviesDetails() {
             {!movieDetails.title || !movieDetails.poster_path ? (
                 <MovieDetailsFail />
             ) : (
-                    <>
+                <>
                     <div className="back-button-container">
-                        <button onClick={goBack} className="back-button">Go Back</button>
+                        <button onClick={goBack} className="back-button">
+                            Go Back
+                        </button>
                     </div>
                     <h1 className='md-title'>{movieDetails.title}</h1>
                     <div className='md-container'>
-                        <img className='col md-img' src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`} alt={movieDetails.title} />
-                        <div className=' col md-details'>
-                            <p>Overview: {movieDetails.overview}</p>
-                            <p>Release Date: {movieDetails.release_date}</p>
-                            <p>Duration: {movieDetails.runtime} minutes</p>
-                            <p>Genres: {movieDetails.genres && movieDetails.genres.map(genre => genre.name).join(', ')}</p>
-                            <p>Average Rating: {movieDetails.vote_average}</p>
+                        <img
+                            className='col md-img'
+                            src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`}
+                            alt={movieDetails.title}
+                        />
+                        <div className='col md-details'>
+                            <div className="md-info">
+                                <p className="md-info-title"><strong>Overview:</strong></p>
+                                <p>{movieDetails.overview}</p>
+                            </div>
+                            <div className="md-info">
+                                <p className="md-info-title"><strong>Release Date:</strong></p>
+                                <p>{movieDetails.release_date}</p>
+                            </div>
+                            <div className="md-info">
+                                <p className="md-info-title"><strong>Duration:</strong></p>
+                                <p>{movieDetails.runtime} minutes</p>
+                            </div>
+                            <div className="md-info">
+                                <p className="md-info-title"><strong>Genres:</strong></p>
+                                <p>{movieDetails.genres && movieDetails.genres.map(genre => genre.name).join(', ')}</p>
+                            </div>
+                            <div className="md-info">
+                                <p className="md-info-title"><strong>Average Rating:</strong></p>
+                                <p>{movieDetails.vote_average}</p>
+                            </div>
                         </div>
                     </div>
                 </>
@@ -58,7 +77,5 @@ function MoviesDetails() {
 }
 
 export default MoviesDetails;
-
-
 
 // <p>Original Language: {movieDetails.original_language}</p>
