@@ -10,8 +10,8 @@ function Movies() {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const [visiblePages, setVisiblePages] = useState([]);
-    const [searchQuery, setSearchQuery] = useState(''); // Nuevo estado de búsqueda
-    const [searchResults, setSearchResults] = useState([]); // Nuevo estado de resultados de búsqueda
+    const [searchQuery, setSearchQuery] = useState(''); // Estado de búsqueda
+    const [searchResults, setSearchResults] = useState([]); // Estado de resultados de búsqueda
     const apiKey = 'e76e43be11ae30706e80f301fd5ccfee';
 
     useEffect(() => {
@@ -19,10 +19,8 @@ function Movies() {
             try {
                 let url;
                 if (searchQuery) {
-                    // Si hay una consulta de búsqueda, use la URL de búsqueda
                     url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}&page=${currentPage}`;
                 } else {
-                    // Si no hay una consulta de búsqueda, use la URL de películas en proyección
                     url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&page=${currentPage}`;
                 }
 
@@ -74,7 +72,7 @@ function Movies() {
     return (
         <div>
             <h1 className='movies_heading'>🎬 Movies</h1>
-            <Search onSearch={handleSearch} /> {/* Agrega el componente Search */}
+            <Search onSearch={handleSearch} />
             {loading ? (
                 <p>Cargando...</p>
             ) : (
