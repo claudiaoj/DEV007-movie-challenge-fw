@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Search.css';
+import { ImSearch } from "react-icons/im";
 
 function Search({ onSearch }) {
     const [searchQuery, setSearchQuery] = useState('');
@@ -21,7 +22,7 @@ function Search({ onSearch }) {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search_input"
         />
-        <button className="search_button" onClick={handleSearch}>🔎</button>
+        <button className="search_button" onClick={handleSearch}><ImSearch/></button>
         </div>
     );
 }

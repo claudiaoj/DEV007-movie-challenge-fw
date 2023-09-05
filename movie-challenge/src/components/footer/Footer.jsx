@@ -1,4 +1,5 @@
 import './footer.css';
+import { ImArrowUp } from "react-icons/im";
 
 function Footer() {
   const handleScrollToTop = () => {
@@ -14,7 +15,7 @@ function Footer() {
             </li>
             <li className="footer_item">
               <button className="button_top" onClick={handleScrollToTop}>
-              <p className="up"></p>⬆
+              <p className="up"></p><ImArrowUp/>
               </button>
             </li>
           </ul>

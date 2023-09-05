@@ -3,6 +3,7 @@ import '../trending.css';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Search from '../search/Search';
+import { ImArrowLeft,ImArrowRight  } from "react-icons/im";
 
 function Movies() {
     const [movies, setMovies] = useState([]);
@@ -88,7 +89,7 @@ function Movies() {
                 </div>
             )}
             <div className='pagination'>
-                <button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 1}>⬅</button>
+                <button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 1}><ImArrowLeft/></button>
                 {visiblePages.map(pageNumber => (
                     <button
                         key={pageNumber}
@@ -98,7 +99,7 @@ function Movies() {
                         {pageNumber}
                     </button>
                 ))}
-                <button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}>⮕</button>
+                <button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}><ImArrowRight/></button>
             </div>
         </div>
     );
