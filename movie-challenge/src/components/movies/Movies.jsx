@@ -11,8 +11,8 @@ function Movies() {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const [visiblePages, setVisiblePages] = useState([]);
-    const [searchQuery, setSearchQuery] = useState(''); // Estado de búsqueda
-    const [searchResults, setSearchResults] = useState([]); // Estado de resultados de búsqueda
+    const [searchQuery, setSearchQuery] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
     const apiKey = 'e76e43be11ae30706e80f301fd5ccfee';
 
     useEffect(() => {

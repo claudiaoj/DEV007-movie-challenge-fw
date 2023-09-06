@@ -80,10 +80,17 @@ body {
   border: 1px solid #372948;
   border-radius: 50%;
   padding: 0.5rem 1rem;
-  color: #251B37;
+  color: #554466;
   background-color:#FFECEF;
   cursor: pointer;
+  text-align: center; 
+  line-height: 15px; 
+  font-weight: bold;
+}
 
+.pagination button:hover{
+  background-color: #FFCACA;
+  color: #372948;
 }
 
 .pagination button.active {
@@ -91,10 +98,3 @@ body {
   color: white;
 }
 
-.pagination button:first-child {
-  margin-right: 0.5rem;
-}
-
-.pagination button:last-child {
-  margin-left: 0.5rem;
-}

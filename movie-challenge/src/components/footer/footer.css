@@ -5,6 +5,7 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 0;
+    color: white;
 }
 
 .footer_name {
@@ -28,7 +29,13 @@
     color: #372948;
     border: none;
     width: 30px;
-    border-radius: 60%;
+    height: 30px;
+    border-radius: 50%; 
     text-align: center;
     cursor: pointer;
+}
+
+.button_top:hover{
+    background-color: #FFCACA;
+    color: #554466;
 }
